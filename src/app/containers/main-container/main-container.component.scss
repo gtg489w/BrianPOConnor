@@ -1,0 +1,36 @@
+.header {
+	color: #ffffff;
+	padding: 12px 20px;
+	display: flex;
+
+	h1 {
+		margin: 0px;
+		display: inline-block;
+	}
+
+	nav {
+		display: inline-block;
+		margin-left: 20px;
+		line-height: 42px;
+		flex-grow: 1;
+		text-align: right;
+
+		ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+
+			li {
+				display: inline;
+
+				a {
+					color: #ffffff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+.page {
+	background: #ffffff;
+}
