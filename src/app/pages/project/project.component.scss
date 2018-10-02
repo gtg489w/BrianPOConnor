@@ -11,6 +11,9 @@ h2 {
 	max-height: 400px;
 	margin: 0px 0px 20px 20px;
 }
+.project-details {
+	background: #efefef;
+}
 .tag {
 	display: inline-block;
 	padding: 4px 12px;
@@ -19,4 +22,8 @@ h2 {
 	color: #ffffff;
 	border-radius: 2px;
 	font-size: 12px;
+}
+.padded-row {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
