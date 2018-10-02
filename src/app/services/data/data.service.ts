@@ -7,6 +7,17 @@ export class DataService {
 
 	_projects: BehaviorSubject<Project[]>;
 
+	// Additional projects to add:
+	// 		SPEDx.com
+	// 		DISTILLIO
+	// 		Nadex
+	// 		Tailored Tee
+	// 		Talentwise
+	// 		eKO cooler
+	// 		PERP
+	// 		Goldman/Clarity
+	// 		FDIC
+
 	projects: Project[] = [{
 		image: '/assets/portfolio/wireless-account-management.png',
 		slug: 'wireless-account-management',
@@ -21,7 +32,7 @@ export class DataService {
 		image: '/assets/portfolio/fantasy-wiffle.png',
 		slug: 'fantasy-wiffle',
 		title: 'Fantasy Wiffle',
-		subtitle: 'Sole Owner'
+		subtitle: 'Sole Owner | Designer | Developer'
 	}, {
 		image: '/assets/portfolio/impulse.png',
 		slug: 'impulse',
@@ -34,7 +45,7 @@ export class DataService {
 		subtitle: 'Manager | Member'
 	}, {
 		image: '/assets/portfolio/level-up.png',
-		slug: 'levelup',
+		slug: 'level-up',
 		title: 'LevelUp',
 		subtitle: 'Hackathon | 2<sup>nd</sup> Place'
 	}, {

@@ -9,13 +9,17 @@
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	z-index: 2;
+	z-index: 100;
 
 	h1 {
 		margin: 0px;
 		display: inline-block;
 		font-weight: 300;
 		text-transform: uppercase;
+
+		span {
+			font-size: 26px;
+		}
 	}
 
 	nav {
