@@ -1,11 +1,21 @@
+@import '~styles/main';
+
 .header {
+	background: $color-primary;
 	color: #ffffff;
 	padding: 12px 20px;
 	display: flex;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 2;
 
 	h1 {
 		margin: 0px;
 		display: inline-block;
+		font-weight: 300;
+		text-transform: uppercase;
 	}
 
 	nav {
@@ -33,4 +43,6 @@
 }
 .page {
 	background: #ffffff;
+	margin-top: 60px;
+	padding-top: 26px;
 }

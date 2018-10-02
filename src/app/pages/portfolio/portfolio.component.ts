@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../services/data/data.service';
+import { Project } from '../../classes/project';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+	projects: Project[];
 
-  ngOnInit() {
-  }
+	constructor(private data: DataService) { }
 
+	ngOnInit() {
+		this.data.getProjects().subscribe(projects => {
+			this.projects = projects;
+		});
+	}
 }

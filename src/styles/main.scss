@@ -1,0 +1,19 @@
+$color-primary: #275679;
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: $color-primary;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+	color: $color-primary;
+}
+
+.container {
+	max-width: 1020px;
+	margin: auto;
+}

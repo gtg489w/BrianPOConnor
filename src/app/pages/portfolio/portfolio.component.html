@@ -1,4 +1,9 @@
-<box-zoom [image]="'/assets/portfolio/impulse.png'" [alt]="'Impulse'" [caption]="'View Project'"></box-zoom>
-<box-zoom [image]="'/assets/portfolio/level-up.png'" [alt]="'LevelUp'" [caption]="'View Project'"></box-zoom>
-<box-zoom [image]="'/assets/portfolio/wireless-account-management.png'" [alt]="'Wireless Account Management'" [caption]="'View Project'"></box-zoom>
-<box-zoom [image]="'/assets/portfolio/garcon.png'" [alt]="'Garcon'" [caption]="'View Project'"></box-zoom>
+<div class="container">
+	<h2>Portfolio</h2>
+
+	<div class="project" *ngFor="let project of projects" [routerLink]="['project', project.slug]">
+		<box-zoom [image]="project.image" [alt]="project.title" [caption]="'View Project'"></box-zoom>
+		<h3>{{ project.title }}</h3>
+		<div class="subtitle" [innerHtml]="project.title"></div>
+	</div>
+</div>

@@ -9,6 +9,7 @@ import { ProjectComponent } from './pages/project/project.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { MainContainerComponent } from './containers/main-container/main-container.component';
 import { BoxZoomComponent } from './components/box-zoom/box-zoom.component';
+import { DataService } from './services/data/data.service';
 
 
 @NgModule({
@@ -24,7 +25,9 @@ import { BoxZoomComponent } from './components/box-zoom/box-zoom.component';
 		BrowserModule,
 		RouterModule.forRoot(rootRouterConfig, { useHash: false })
 	],
-	providers: [],
+	providers: [
+		DataService
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

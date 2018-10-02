@@ -1,0 +1,20 @@
+h2 {
+	margin-top: 0px;
+}
+
+.project {
+	margin: 10px;
+	height: 360px;
+	display: inline-block;
+
+	h3 {
+		font-size: 22px;
+		margin: 0px;
+	}
+	.subtitle {
+		font-weight: 300;
+		color: #666;
+		position: relative;
+		top: -4px;
+	}
+}
