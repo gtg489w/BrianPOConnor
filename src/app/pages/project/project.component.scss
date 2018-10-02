@@ -9,7 +9,7 @@ h2 {
 .screens-right {
 	max-width: 400px;
 	max-height: 400px;
-	margin: 0px 0px 20px 20px;
+	width: 100%;
 }
 .screens-right-small {
 	display: inline-block;
@@ -23,6 +23,10 @@ h2 {
 	background: #efefef;
 	padding-bottom: 20px;
 	margin-top: 20px;
+}
+.presentation {
+	width: 100%;
+	height: 315px;
 }
 .tag {
 	display: inline-block;

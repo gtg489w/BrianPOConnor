@@ -40,6 +40,7 @@
 				a {
 					color: #ffffff;
 					text-decoration: none;
+					padding: 4px 12px;
 				}
 			}
 		}
@@ -53,4 +54,31 @@
 }
 .footer {
 	padding: 40px 0px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 300;
+
+	p {
+		margin: 8px 0px;
+	}
+	.profile-photo {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background: url(/assets/profile/profile.png) center center no-repeat;
+		background-size: cover;
+		float: left;
+		margin: 0px 12px 12px 0px;
+	}
+	.social-icon {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		background: #fff;
+		background: center center no-repeat;
+		background-size: contain;
+	}
+	.social-icon-linkedin {
+		background-image: url(/assets/icons/icon-social-linkedin-white.png);
+	}
 }

@@ -6,6 +6,10 @@ html, body {
 	font-family: 'Source Sans Pro', sans-serif;
 	background: $color-primary;
 }
+h2 {
+	font-weight: 300;
+	font-size: 32px;
+}
 a,
 a:visited,
 a:hover,
@@ -13,9 +17,14 @@ a:active {
 	color: $color-primary;
 }
 
+.left {
+	text-align: left;
+}
 .center {
 	text-align: center;
 }
-
+.right {
+	text-align: right;
+}
 
 @import 'grid';

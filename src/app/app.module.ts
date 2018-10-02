@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { MainContainerComponent } from './containers/main-container/main-container.component';
 import { BoxZoomComponent } from './components/box-zoom/box-zoom.component';
 import { DataService } from './services/data/data.service';
+import { ResumeComponent } from './pages/resume/resume.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { DataService } from './services/data/data.service';
 		ProjectComponent,
 		PageNotFoundComponent,
 		MainContainerComponent,
-		BoxZoomComponent
+		BoxZoomComponent,
+		ResumeComponent
 	],
 	imports: [
 		BrowserModule,
