@@ -146,6 +146,18 @@
 		-webkit-transform: rotate(45deg) translate(-8px, -8px);
 		transform: rotate(45deg) translate(-8px, -8px);
 	}
+	.footer {
+		text-align: center;
+
+		.profile-photo {
+			float: none;
+			margin: auto;
+		}
+
+		.right {
+			text-align: center;
+		}
+	}
 }
 
 @media (max-width: 468px) {

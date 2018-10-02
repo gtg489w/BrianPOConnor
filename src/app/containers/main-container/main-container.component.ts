@@ -8,7 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class MainContainerComponent implements OnInit {
 
-	navigationOpen: boolean = true;
+	navigationOpen: boolean = false;
 
 	constructor(private router: Router) { }
 
