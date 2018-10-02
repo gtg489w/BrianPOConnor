@@ -9,4 +9,4 @@ Run `npm install` to install dependencies, run `ng serve` to build and start the
 ## Contact info
 
 Brian O'Connor
-gtg489w@gmail.com
+gtg489w [at] gmail [dot] com

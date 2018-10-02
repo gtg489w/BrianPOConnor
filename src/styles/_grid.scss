@@ -24,16 +24,11 @@
 	.row {
 		display: block;
 	}
+	.col {
+		clear: both;
+	}
 	.col:before, .col:after {
 		content: ' ';
 		display: table;
 	}
 }
-
-// .grid-thirds {
-// display: flex;
-// justify-content: space-between;
-// }
-// .grid-thirds .col {
-// width: 32%;
-// }
