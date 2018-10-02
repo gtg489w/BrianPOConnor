@@ -1,0 +1,25 @@
+.row {
+	display: flex;
+	clear: both;
+	margin: 0px -12px;
+}
+.col {
+	flex: 1;
+	padding: 0px 12px;
+}
+
+@media (max-width: 600px) {
+	.row {
+		display: block;
+	}
+}
+
+
+
+// .flex-grid-thirds {
+// 	display: flex;
+// 	justify-content: space-between;
+//   }
+//   .flex-grid-thirds .col {
+// 	width: 32%;
+//   }

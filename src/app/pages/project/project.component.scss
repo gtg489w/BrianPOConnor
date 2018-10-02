@@ -1,0 +1,22 @@
+@import '~styles/main';
+
+h2 {
+	margin-bottom: 0px;
+}
+.subtitle {
+	font-weight: 300;
+}
+.screens-right {
+	max-width: 400px;
+	max-height: 400px;
+	margin: 0px 0px 20px 20px;
+}
+.tag {
+	display: inline-block;
+	padding: 4px 12px;
+	margin: 0px 4px 4px 0px;
+	background: $color-primary;
+	color: #ffffff;
+	border-radius: 2px;
+	font-size: 12px;
+}

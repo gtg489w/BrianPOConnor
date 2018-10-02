@@ -1,8 +1,15 @@
+@import '~styles/main';
+
 h2 {
 	margin-top: 0px;
 }
 
+.project-list {
+	text-align: center;
+}
+
 .project {
+	text-align: left;
 	margin: 10px;
 	height: 360px;
 	display: inline-block;

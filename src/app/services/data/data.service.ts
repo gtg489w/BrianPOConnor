@@ -11,22 +11,42 @@ export class DataService {
 		image: '/assets/portfolio/wireless-account-management.png',
 		slug: 'wireless-account-management',
 		title: 'Wireless Account Management',
-		subtitle: 'Arcitect | Lead'
+		subtitle: 'Arcitect | Development Lead'
 	}, {
 		image: '/assets/portfolio/true-respite.png',
 		slug: 'true-respite',
 		title: 'True Respite',
 		subtitle: 'Owner | IT Lead'
 	}, {
+		image: '/assets/portfolio/fantasy-wiffle.png',
+		slug: 'fantasy-wiffle',
+		title: 'Fantasy Wiffle',
+		subtitle: 'Sole Owner'
+	}, {
 		image: '/assets/portfolio/impulse.png',
 		slug: 'impulse',
 		title: 'Impulse',
 		subtitle: 'Hackathon | 1<sup>st</sup> Place'
 	}, {
+		image: '/assets/portfolio/almost-legendary.png',
+		slug: 'almost-legendary',
+		title: 'Almost Legendary',
+		subtitle: 'Manager | Member'
+	}, {
 		image: '/assets/portfolio/level-up.png',
 		slug: 'levelup',
 		title: 'LevelUp',
 		subtitle: 'Hackathon | 2<sup>nd</sup> Place'
+	}, {
+		image: '/assets/portfolio/sitter.png',
+		slug: 'sitter',
+		title: 'Sitter',
+		subtitle: 'Hackathon | 2<sup>nd</sup> Place'
+	}, {
+		image: '/assets/portfolio/cruise-communication.png',
+		slug: 'cruise-communication',
+		title: 'Cruise Communication',
+		subtitle: 'Architect | Development Lead'
 	}, {
 		image: '/assets/portfolio/garcon.png',
 		slug: 'garcon',
