@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio application for brianpoconnor.com 
+Portfolio application for https://brianpoconnor.com 
 
 ## Getting Started
 

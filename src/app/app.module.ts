@@ -11,7 +11,9 @@ import { MainContainerComponent } from './containers/main-container/main-contain
 import { BoxZoomComponent } from './components/box-zoom/box-zoom.component';
 import { DataService } from './services/data/data.service';
 import { ResumeComponent } from './pages/resume/resume.component';
-
+import { LightboxComponent, LightboxDirective } from './components/lightbox/lightbox.component';
+import { LightboxService } from './components/lightbox/lightbox.service';
+import { StopPropagationDirective } from './directives/stop-propagation/stop-propagation.directive';
 
 @NgModule({
 	declarations: [
@@ -21,14 +23,18 @@ import { ResumeComponent } from './pages/resume/resume.component';
 		PageNotFoundComponent,
 		MainContainerComponent,
 		BoxZoomComponent,
-		ResumeComponent
+		ResumeComponent,
+		StopPropagationDirective,
+		LightboxDirective,
+		LightboxComponent
 	],
 	imports: [
 		BrowserModule,
 		RouterModule.forRoot(rootRouterConfig, { useHash: false })
 	],
 	providers: [
-		DataService
+		DataService,
+		LightboxService
 	],
 	bootstrap: [AppComponent]
 })
