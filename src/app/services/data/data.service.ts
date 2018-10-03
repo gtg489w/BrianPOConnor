@@ -24,7 +24,7 @@ export class DataService {
 		image: '/assets/portfolio/wireless-account-management.png',
 		slug: 'wireless-account-management',
 		title: 'Wireless Account Management',
-		subtitle: 'Arcitect | Development Lead'
+		subtitle: 'Architect | Development Lead'
 	}, {
 		image: '/assets/portfolio/true-respite.png',
 		slug: 'true-respite',
