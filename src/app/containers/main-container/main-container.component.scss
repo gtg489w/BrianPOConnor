@@ -86,7 +86,7 @@
 }
 .page {
 	background: #ffffff;
-	margin-top: 60px;
+	margin-top: 40px;
 	padding-top: 26px;
 	padding-bottom: 40px;
 }
@@ -109,7 +109,7 @@
 		background: url(/assets/profile/profile.png) center center no-repeat;
 		background-size: cover;
 		float: left;
-		margin: 0px 12px 12px 0px;
+		margin: 0px 12px 100px 0px;
 	}
 	.social-icon {
 		width: 40px;
@@ -176,7 +176,10 @@
 			float: none;
 			margin: auto;
 		}
-
+		p {
+			max-width: 340px;
+			margin: 32px auto;
+		}
 		.right {
 			text-align: center;
 		}

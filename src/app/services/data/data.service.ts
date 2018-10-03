@@ -8,7 +8,6 @@ export class DataService {
 	_projects: BehaviorSubject<Project[]>;
 
 	// Additional projects to add:
-	// 		SPEDx.com
 	// 		DISTILLIO
 	// 		Game Mechanics
 	// 		Delta FSD
@@ -31,10 +30,20 @@ export class DataService {
 		title: 'True Respite',
 		subtitle: 'Owner | IT Lead'
 	}, {
+		image: '/assets/portfolio/distillio.png',
+		slug: 'distillio',
+		title: 'DISTILLIO',
+		subtitle: 'Owner | Team Lead | Developer'
+	}, {
 		image: '/assets/portfolio/fantasy-wiffle.png',
 		slug: 'fantasy-wiffle',
 		title: 'Fantasy Wiffle',
 		subtitle: 'Sole Owner | Designer | Developer'
+	}, {
+		image: '/assets/portfolio/spedx.png',
+		slug: 'spedx',
+		title: 'SPEDx',
+		subtitle: 'Owner | Developer'
 	}, {
 		image: '/assets/portfolio/impulse.png',
 		slug: 'impulse',
