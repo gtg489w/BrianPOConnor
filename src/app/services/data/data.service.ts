@@ -35,6 +35,11 @@ export class DataService {
 		title: 'DISTILLIO',
 		subtitle: 'Owner | Team Lead | Developer'
 	}, {
+		image: '/assets/portfolio/talentwise.png',
+		slug: 'talentwise',
+		title: 'Talentwise',
+		subtitle: 'Product Owner | Developer'
+	}, {
 		image: '/assets/portfolio/fantasy-wiffle.png',
 		slug: 'fantasy-wiffle',
 		title: 'Fantasy Wiffle',
