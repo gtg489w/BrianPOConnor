@@ -8,6 +8,10 @@ export class LightboxService {
 	constructor() { }
 
 	show(url: string, urls?: string[]) {
-		this.lightboxBus.emit({ url: url, urls: urls });
+		this.lightboxBus.emit({ show: true, url: url, urls: urls });
+	}
+
+	hide() {
+		this.lightboxBus.emit({ show: false });
 	}
 }

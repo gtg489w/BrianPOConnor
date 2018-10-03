@@ -28,9 +28,13 @@ export class LightboxComponent implements OnInit {
 
 	ngOnInit() {
 		this.lightboxService.lightboxBus.subscribe(params => {
-			this.src = params.url;
-			this.isShowing = true;
-			// this.list = params.urls; // in the future let's add the ability to pass multiple pictures with left/right navigation
+			if(params.show) {
+				this.src = params.url;
+				this.isShowing = true;
+				// this.list = params.urls; // in the future let's add the ability to pass multiple pictures with left/right navigation
+			} else {
+				this.isShowing = false;
+			}
 		});
 	}
 

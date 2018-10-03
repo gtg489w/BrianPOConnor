@@ -8,16 +8,7 @@ export class DataService {
 	_projects: BehaviorSubject<Project[]>;
 
 	// Additional projects to add:
-	// 		DISTILLIO
-	// 		Game Mechanics
-	// 		Delta FSD
-	// 		Nadex
-	// 		Tailored Tee
-	// 		Talentwise
-	// 		eKO cooler
-	// 		PERP
-	// 		Goldman/Clarity
-	// 		FDIC
+	// 		PERP, Delta FSD, Nadex, Tailored Tee, eKO cooler, GS/Clarity, FDIC
 
 	projects: Project[] = [{
 		image: '/assets/portfolio/wireless-account-management.png',
@@ -49,6 +40,11 @@ export class DataService {
 		slug: 'spedx',
 		title: 'SPEDx',
 		subtitle: 'Owner | Developer'
+	}, {
+		image: '/assets/portfolio/game-mechanics.png',
+		slug: 'game-mechanics',
+		title: 'Game Mechanics',
+		subtitle: 'Architect | Development Lead'
 	}, {
 		image: '/assets/portfolio/impulse.png',
 		slug: 'impulse',
