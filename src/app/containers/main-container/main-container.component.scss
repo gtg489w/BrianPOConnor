@@ -14,10 +14,14 @@
 	h1 {
 		margin: 0px;
 		display: inline-block;
+		max-height: 42px;
 		font-weight: 300;
 		text-transform: uppercase;
 		cursor: pointer;
 
+		img  {
+			max-height: 42px;
+		}
 		span {
 			font-size: 26px;
 		}
@@ -52,12 +56,29 @@
 			padding: 0px;
 
 			li {
-				display: inline;
+				display: inline-block;
+				padding: 0px 12px;
+				cursor: pointer;
 
 				a {
 					color: #ffffff;
 					text-decoration: none;
-					padding: 4px 12px;
+					position: relative;
+				}
+				a:after {
+					content: "";
+					width: 100%;
+					height: 2px;
+					background: #ffffff;
+					display: inline-block;
+					position: absolute;
+					left: 0px;
+					bottom: -10px;
+					transition: all .3s;
+					opacity: 0;
+				}
+				a.active:after {
+					opacity: 1;
 				}
 			}
 		}
@@ -172,6 +193,23 @@
 
 			img {
 				width: 100%;
+			}
+		}
+		nav {
+			ul {
+				li {
+					a:after {
+						width: 0;
+						height: 0;
+						border-top: 10px solid transparent;
+						border-bottom: 10px solid transparent;
+						border-left: 9px solid #ffffff;
+						background: transparent;
+						position: absolute;
+						left: -15px;
+						bottom: 10px;
+					}
+				}
 			}
 		}
 	}

@@ -6,15 +6,15 @@
 	</div>
 
 	<h1 [routerLink]="['/']">
-		<img src="/assets/profile/logo.png" alt="Brian O'Connor" />
+		<img src="/assets/img/logo.png" alt="Brian O'Connor" />
 	</h1>
 	<nav>
 		<ul>
-			<li>
-				<a [routerLink]="['/']">Portfolio</a>
+			<li [routerLink]="['/']">
+				<a [ngClass]="{ 'active': url == '/' }">Portfolio</a>
 			</li>
-			<li>
-				<a [routerLink]="['/resume']">Resume</a>
+			<li [routerLink]="['/resume']">
+				<a [ngClass]="{ 'active': url == '/resume' }">Resume</a>
 			</li>
 		</ul>
 	</nav>

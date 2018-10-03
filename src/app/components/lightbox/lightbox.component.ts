@@ -22,7 +22,7 @@ export class LightboxDirective {
 export class LightboxComponent implements OnInit {
 
 	isShowing: boolean;
-	src: string;
+	src: string = '/assets/profile/profile.png'; // default hack to allow animation on the first show()
 
 	constructor(private lightboxService: LightboxService) { }
 
@@ -30,8 +30,7 @@ export class LightboxComponent implements OnInit {
 		this.lightboxService.lightboxBus.subscribe(params => {
 			this.src = params.url;
 			this.isShowing = true;
-
-			// this.list = params.urls;
+			// this.list = params.urls; // in the future let's add the ability to pass multiple pictures with left/right navigation
 		});
 	}
 

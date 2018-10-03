@@ -9,16 +9,20 @@ import { Router, NavigationEnd } from '@angular/router';
 export class MainContainerComponent implements OnInit {
 
 	navigationOpen: boolean = false;
+	url: string;
 
 	constructor(private router: Router) { }
 
 	ngOnInit() {
+		this.url = this.router.url;
+
 		this.router.events.distinctUntilChanged((previous: any, current: any) => {
 			if(current instanceof NavigationEnd) {
 				return previous.url === current.url;
 			}
 			return true;
 		}).subscribe((route: any) => {
+			this.url = route.url;
 			this.navigationOpen = false;
 		});
 	}
