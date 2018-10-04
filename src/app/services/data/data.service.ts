@@ -7,8 +7,12 @@ export class DataService {
 
 	_projects: BehaviorSubject<Project[]>;
 
+	// TODO refactor all of this and the HTML on the project component page into JSON/an actual API
+
 	// Additional projects to add:
-	// 		PERP, Delta FSD, Nadex, Tailored Tee, eKO cooler, GS/Clarity, FDIC
+	// 		PERP
+	// 		GateMate
+	// 		Delta FSD, Nadex, Tailored Tee, eKO cooler, GS/Clarity, FDIC, LED app, Luci
 
 	projects: Project[] = [{
 		image: '/assets/portfolio/wireless-account-management.png',
