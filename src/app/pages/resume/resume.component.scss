@@ -5,6 +5,15 @@ $timeline-gutter: 40px;
 $timeline-line-width: 4px;
 $timeline-dot-diameter: 8px;
 
+.page-header {
+	display: flex;
+	align-items: center;
+
+	.left, .right {
+		flex-grow: 1;
+	}
+}
+
 .timeline {
 	position: relative;
 	padding: 40px 0px;
