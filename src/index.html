@@ -39,7 +39,7 @@
 		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 		<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-		<meta name="application-name" content="&nbsp;"/>
+		<meta name="application-name" content="Brian O'Connor"/>
 		<meta name="msapplication-TileColor" content="#FFFFFF" />
 		<meta name="msapplication-TileImage" content="mstile-144x144.png" />
 		<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
@@ -60,6 +60,16 @@
 
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=364759880249854&autoLogAppEvents=1';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<app-root></app-root>
 	</body>
 </html>

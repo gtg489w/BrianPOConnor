@@ -60,6 +60,11 @@ export class DataService {
 		title: 'Almost Legendary',
 		subtitle: 'Manager | Member'
 	}, {
+		image: '/assets/portfolio/wiffle-ball-broadcast.png',
+		slug: 'wiffle-ball-broadcast',
+		title: 'WIFFLE Ball Broadcast',
+		subtitle: 'Broadcast Producer'
+	}, {
 		image: '/assets/portfolio/level-up.png',
 		slug: 'level-up',
 		title: 'LevelUp',

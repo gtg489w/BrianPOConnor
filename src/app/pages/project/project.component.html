@@ -573,6 +573,57 @@
 	</div>
 </div>
 
+<!-- WIFFLE Ball Broadcast -->
+
+<div class="container" *ngIf="projectSlug == 'wiffle-ball-broadcast'">
+	<h2>WIFFLE Ball Broadcast</h2>
+	<div class="subtitle">Broadcast Producer</div>
+	<div class="row">
+		<div class="col">
+			<div class="overview">
+				<p>The annual Travis Roy Foundation WIFFLE® Ball Tournament at Little Fenway in Essex, Vermont, has raised over $4 Million to benefit spinal cord injured survivors and research into a cure for paralysis. This unique community event, where players from around the country can enjoy playing America’s #1 backyard game on replicas of Fenway Park, Wrigley Field, and Field of Dreams, has captured the attention of major media sources, sports enthusiasts, and friends of Travis Roy.</p>
+
+				<h3>Involvement</h3>
+				<p>I have been volunteering at the annual WIFFLE ball tournament for many years in various capacities. Since 2014, I have been working with the Pack Network to produce the online stream of the games throughout the weekend. During the weekend of my first year, I identified a way to streamline the visual overlaid components (e.g., live scoreboard, batter identification and statistics) and built out a custom web application. This application allowed us to easily update the scoreboard and overlay that visual on the live feed.</p>
+				<p>The live broadcast is done in Wirecast with a layer dedicated to a green screen. The software I wrote (as seen in the previews on this page) enables the broadcasting team to set lineups, easily manage the scoreboard and current batter with a live keyboard feature, display scores of other games throughout the weekend, show a rotating graphic with our sponsors, and show pre-canned or custom infographics. These components are arranged on a green screen output and captured with wirecast.</p>
+				<p>The 2018 Facebook Live stream brought in over 47 thousand viewing minutes and tremendously increased the engagement and awareness of the Travis Roy Foundation.</p>
+			</div>
+			<div>
+				<a href="https://www.facebook.com/travisroyfoundation/videos/10156773296976052/?t=5367" target="_blank">
+					<img src="/assets/projects/wiffle-ball-broadcast/screen-facebook-stream.png" alt="Facebook Live Broadcast" class="screens-left" />
+				</a>
+			</div>
+		</div>
+		<div class="col center">
+			<img src="/assets/projects/wiffle-ball-broadcast/screen-metrics.png" alt="Broadcast Metrics Screen" class="screens-right" [lightbox]="'/assets/projects/wiffle-ball-broadcast/screen-metrics.png'" />
+			<img src="/assets/projects/wiffle-ball-broadcast/screen-controller.png" alt="Broadcast Controller Screen" class="screens-right screens-right-small" [lightbox]="'/assets/projects/wiffle-ball-broadcast/screen-controller.png'" />
+			<img src="/assets/projects/wiffle-ball-broadcast/screen-view.png" alt="Broadcast View Screen" class="screens-right screens-right-small" [lightbox]="'/assets/projects/wiffle-ball-broadcast/screen-view.png'" />
+		</div>
+	</div>
+	<div class="row project-details">
+		<div class="col">
+			<h3>Results</h3>
+			<ul>
+				<li>Over 47,000 minutes viewed over the 2018 weekend</li>
+				<li>Promoted tournament sponsors between games and between innings</li>
+				<li>Instant replays cost the challenging team a $50 donation bringing in additional donations during the weekend</li>
+			</ul>
+		</div>
+		<div class="col">
+			<h3>Tags</h3>
+			<div class="tags">
+				<div class="tag">Video Streaming</div>
+				<div class="tag">Broadcast</div>
+				<div class="tag">Angular</div>
+				<div class="tag">Web Sockets</div>
+				<div class="tag">Social Media</div>
+				<div class="tag">Facebook</div>
+				<div class="tag">Wirecast</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- Level Up -->
 
 <div class="container" *ngIf="projectSlug == 'level-up'">
