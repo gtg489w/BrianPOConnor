@@ -25,6 +25,11 @@ export class DataService {
 		title: 'True Respite',
 		subtitle: 'Owner | IT Lead'
 	}, {
+		image: '/assets/portfolio/taliscape.png',
+		slug: 'taliscape',
+		title: 'Taliscape',
+		subtitle: 'Owner | Designer | Developer'
+	}, {
 		image: '/assets/portfolio/distillio.png',
 		slug: 'distillio',
 		title: 'DISTILLIO',
@@ -84,6 +89,11 @@ export class DataService {
 		slug: 'garcon',
 		title: 'Garcon',
 		subtitle: 'Hackathon | 1<sup>st</sup> Place'
+	}, {
+		image: '/assets/portfolio/torch-products.png',
+		slug: 'torch-products',
+		title: 'Torch Products',
+		subtitle: 'Owner | Designer'
 	}];
 
 	constructor() {
