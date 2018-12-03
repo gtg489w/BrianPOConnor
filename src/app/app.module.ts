@@ -14,6 +14,7 @@ import { ResumeComponent } from './pages/resume/resume.component';
 import { LightboxComponent, LightboxDirective } from './components/lightbox/lightbox.component';
 import { LightboxService } from './components/lightbox/lightbox.service';
 import { StopPropagationDirective } from './directives/stop-propagation/stop-propagation.directive';
+import { NestedListComponent } from './components/nested-list/nested-list.component';
 
 @NgModule({
 	declarations: [
@@ -26,7 +27,8 @@ import { StopPropagationDirective } from './directives/stop-propagation/stop-pro
 		ResumeComponent,
 		StopPropagationDirective,
 		LightboxDirective,
-		LightboxComponent
+		LightboxComponent,
+		NestedListComponent
 	],
 	imports: [
 		BrowserModule,
