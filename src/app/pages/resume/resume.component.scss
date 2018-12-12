@@ -94,6 +94,22 @@ $timeline-dot-diameter: 8px;
 	}
 }
 
+.clients {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.client {
+		max-width: 200px;
+		max-height: 120px;
+		margin: 10px 20px;
+
+		img {
+			max-width: 100%;
+			max-height: 120px;
+		}
+	}
+}
 
 @media (max-width: 768px) {
 	.timeline {
