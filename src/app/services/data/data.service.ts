@@ -129,6 +129,9 @@ export class DataService {
 			<p><a href="https://taliscape.com" target="_blank">https://taliscape.com</a> is a SaaS product that provides estimation, staffing forecasting, time entry, and billing capabilities for a monthly subscription. The solution is targeting a need in small to medium sized consulting agencies where staffing forecasts are typically estimated in weeks and company sizes between 10 and 100.</p>
 		`,
 		images: [{
+			url: '/assets/projects/taliscape/screen-staffing.png',
+			alt: 'Taliscape Staffing Screen'
+		}, {
 			url: '/assets/projects/taliscape/screen-login.png',
 			alt: 'Taliscape Login Screen'
 		}, {
