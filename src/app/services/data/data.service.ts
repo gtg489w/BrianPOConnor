@@ -253,7 +253,7 @@ export class DataService {
 			alt: 'File Screen'
 		}],
 		features: [],
-		results: [{ title: `<a href="https://distillio.com/" target="_blank">https://distillio.com/</a>` }],
+		results: [{ title: `https://distillio.com/ (no longer maintained)` }],
 		tags: [ `Angular`, `OCR`, `Google Vision`, `Kotlin`, `Microservices`, `AWS`, `AWS SNS`, `AWS Route53`, `AWS Lambda`, `AWS S3`, `AWS CloudFront`, `AWS Elastic Beanstalk`, `AWS Certificate Manager`, `AWS Credentials Store`, `AWS Code Pipeline`, `AWS Cognito`, `AWS RDS`, `Adobe Photoshop`, `Adobe Illustrator`, `SEO`, `Google Analytics` ]
 	}, {
 		image: '/assets/portfolio/talentwise.png',
