@@ -31,6 +31,86 @@ export class DataService {
 	// 		Delta FSD, Nadex, GS/Clarity, FDIC, LED app, Luci
 
 	projects: Project[] = [{
+		image: '/assets/portfolio/biermi.png',
+		slug: 'biermi',
+		title: 'birmi',
+		subtitle: 'Co-Founder & President',
+		content: `
+			<p>biermi is the first direct-to-consumer platform for breweries (and other craft beverage manufacturers) to allow them to sell to their customers and manage the fulfillment. biermi was launched on March 16th, 2020 as a proactive response to the COVID-19 outbreak and provides businesses with a storefront and the tools necessary to guide the pick-up, delivery, or shipping fulfillment.</p>
+			<p>In the first 8 weeks, biermi brought on over 100 businesses in over 30 states and processed over $1.5MM.</p>
+			<p>Craft beverage producers can list their products with multiple package variations (e.g., 4-pack, case), manage inventory and product details such as ABV, host pre-sales for upcoming releases, scan QR codes on orders for quick searching, and plan deliveries with route optimization and pick sheets. biermi sends out notifications to customers when deliveries are on their way and even shares the live location of the delivery vehicle while in-transit. Other features include early access codes to preorders, promo codes, reporting, delivery zone configuration, and much more.</p>
+			<p>"biermi is just fantastic! It's so easy to use on both the brewery and customer side. You can choose to have online ordering for pick-up, delivery or both. Seriously one of the most brewery forward and amazing products we've used." --Tyler Kreis, Hysteria, Director of Sales</p>
+			<p>"Honestly this app blows away any others out there" --Steven Capelli, Neshaminy Creek Brewing Company, Co-Owner and Operations Manager</p>
+			<p>"Biermi is the next best thing to visiting my local taproom. It's my go to for fresh, flavorful beer delivered shockingly fast." --Phil S., Happy Customer</p>
+			<p>"I ordered Thursday on Biermi. Website said they would deliver to Annapolis area Saturdays between 5-8. Delivery came on schedule. Website sent me an email when the driver left the shop. He gave me a call when I was his next stop. Driver was "6-feet conscious" (which I appreciated). And excellent beer to boot. 10/10 will order again!" --Kyle B., Huge Fan</p>
+		`,
+		images: [{
+			url: '/assets/projects/biermi/delivery-load.png',
+			alt: 'Website Screens',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/screen-search.png',
+			alt: 'Digital Menu',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/mobile-delivery-details.png',
+			alt: 'Digital Menu',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/mobile-delivery-route.png',
+			alt: 'Digital Menu',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/order-details.png',
+			alt: 'Digital Menu',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/delivery-order-select.png',
+			alt: 'Digital Menu',
+			inheritSize: true
+
+		}],
+		features: [
+			{
+				title: 'Storefront',
+				children: [
+					{ title: 'Pick up, delivery, or shipping options' },
+					{ title: 'Product listings' },
+					{ title: 'Responsive design' },
+					{ title: 'Pick up Llocation selection' },
+					{ title: 'Pre-sales' },
+					{ title: 'Promotion Codes' },
+					{ title: 'Integration with Square and Stripe' },
+					{ title: 'Email confirmation' },
+					{ title: 'Delivery tracking' }
+				]
+			},
+			{
+				title: 'Administration',
+				children: [
+					{ title: 'Pick up location and hours settings' },
+					{ title: 'Pre-sales, release date, and fulfill by date configurations' },
+					{ title: 'Dollar and volume limits on orders or items' },
+					{ title: 'Inventory management' },
+					{ title: 'Order filtering and searching' },
+					{ title: 'Refunds' },
+					{ title: 'Printing' },
+					{ title: 'User/role settings' },
+					{ title: 'Delivery creation / route planning' },
+					{ title: 'Route optimiztion' },
+					{ title: 'Automated email notifications to customers' },
+					{ title: 'Delivery driver location sharing' },
+					{ title: 'Reporting' }
+				]
+			}
+		],
+		results: [
+			{ title: `On boarded over 100 businesses` },
+			{ title: `Processed over $1.5MM in less than 8 weeks` },
+			{ title: `Hosted over 100k users in the first month` },
+		],
+		tags: ['Responsive', 'Google Analytics', 'AWS', 'DynamoDB', 'AWS RDS', 'Google Maps/Places', 'Square', 'Stripe', 'FreedomPay', 'Inventory Management', 'Serverless', 'AWS Lambda', 'AWS API Gateway']
+	}, {
 		image: '/assets/portfolio/wireless-account-management.png',
 		slug: 'wireless-account-management',
 		title: 'Wireless Account Management',
