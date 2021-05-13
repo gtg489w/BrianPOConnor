@@ -36,7 +36,7 @@ export class DataService {
 		title: 'birmi',
 		subtitle: 'Co-Founder & President',
 		content: `
-			<p>biermi is the first direct-to-consumer platform for breweries (and other craft beverage manufacturers) to allow them to sell to their customers and manage the fulfillment. biermi was launched on March 16th, 2020 as a proactive response to the COVID-19 outbreak and provides businesses with a storefront and the tools necessary to guide the pick-up, delivery, or shipping fulfillment.</p>
+			<p>biermi is the first direct-to-consumer platform for breweries (and other craft beverage manufacturers) to allow them to sell dine-in, pick-up, delivery, and shipping to their customers and manage the fulfillment process. biermi was launched on March 16th, 2020 as a proactive response to the COVID-19 outbreak and provides businesses with a storefront and the tools necessary to guide the pick-up, delivery, or shipping fulfillment.</p>
 			<p>In the first 8 weeks, biermi brought on over 100 businesses in over 30 states and processed over $1.5MM.</p>
 			<p>Craft beverage producers can list their products with multiple package variations (e.g., 4-pack, case), manage inventory and product details such as ABV, host pre-sales for upcoming releases, scan QR codes on orders for quick searching, and plan deliveries with route optimization and pick sheets. biermi sends out notifications to customers when deliveries are on their way and even shares the live location of the delivery vehicle while in-transit. Other features include early access codes to preorders, promo codes, reporting, delivery zone configuration, and much more.</p>
 			<p>"biermi is just fantastic! It's so easy to use on both the brewery and customer side. You can choose to have online ordering for pick-up, delivery or both. Seriously one of the most brewery forward and amazing products we've used." --Tyler Kreis, Hysteria, Director of Sales</p>
@@ -106,10 +106,12 @@ export class DataService {
 		],
 		results: [
 			{ title: `On boarded over 100 businesses` },
-			{ title: `Processed over $1.5MM in less than 8 weeks` },
+			{ title: `Processed over $1.5 million in less than 8 weeks` },
 			{ title: `Hosted over 100k users in the first month` },
+			{ title: `Has since processed over $9 million for over 200 businesses` },
+			{ title: `Has handled numerous presales that sell over $100,000 within minutes` },
 		],
-		tags: ['Responsive', 'Google Analytics', 'AWS', 'DynamoDB', 'AWS RDS', 'Google Maps/Places', 'Square', 'Stripe', 'FreedomPay', 'Inventory Management', 'Serverless', 'AWS Lambda', 'AWS API Gateway']
+		tags: ['Responsive', 'Google Analytics', 'AWS', 'DynamoDB', 'AWS RDS', 'Google Maps/Places', 'Square', 'Stripe', 'Clover', 'FreedomPay', 'Inventory Management', 'Serverless', 'AWS Lambda', 'AWS API Gateway']
 	}, {
 		image: '/assets/portfolio/wireless-account-management.png',
 		slug: 'wireless-account-management',
