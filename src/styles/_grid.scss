@@ -1,0 +1,34 @@
+.container {
+	max-width: 1020px;
+	margin: auto;
+}
+.row {
+	display: flex;
+	clear: both;
+	margin: 0px -12px;
+}
+.col {
+	flex: 1;
+	padding: 0px 12px;
+}
+
+@media (max-width: 1060px) {
+	.container {
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.row {
+		display: block;
+	}
+	.col {
+		clear: both;
+	}
+	.col:before, .col:after {
+		content: ' ';
+		display: table;
+	}
+}

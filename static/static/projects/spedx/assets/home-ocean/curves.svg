@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1493px" height="1017px" viewBox="0 0 1493 1017" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>curves</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="curves" transform="translate(746.500000, 508.500000) scale(-1, 1) translate(-746.500000, -508.500000) " fill-rule="nonzero">
+            <g id="Group" fill="#37A5E4">
+                <path d="M0,0 C107.862,7.764 218.24,25.96 331.132,54.589 C444.025,83.218 514.927,112.09 543.841,141.205 C610.749,209.333 633.285,309.778 611.453,442.54 C589.62,575.303 386.082,652.455 0.838,674 L0,0 Z" id="Rectangle-9"></path>
+            </g>
+            <g id="Group" transform="translate(0.000000, 473.000000)" fill="#0C2E43">
+                <path d="M367.93,285.186 C551.545,215.107 643.217,257.392 927.768,257.392 C1117.466,257.392 1305.844,171.808 1492.898,0.635 L1492.898,543.267 L0,543.267 C122.877,417.931 245.521,331.904 367.93,285.186 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

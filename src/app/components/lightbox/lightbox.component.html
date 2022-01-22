@@ -1,0 +1,4 @@
+<div class="lightbox" [ngClass]="{ 'showing': isShowing }" (click)="close()">
+	<img [src]="src" stop-propagation />
+	<div class="lightbox-close" (click)="close()"></div>
+</div>

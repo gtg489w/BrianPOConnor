@@ -1,0 +1,44 @@
+<div class="header" [ngClass]="{ 'nav-open': navigationOpen }">
+	<div class="menu-button-container" (click)="navigationOpen = !navigationOpen">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+
+	<h1 [routerLink]="['/']">
+		<img src="/assets/img/logo.png" alt="Brian O'Connor" />
+	</h1>
+	<nav>
+		<ul>
+			<li [routerLink]="['/']">
+				<a [ngClass]="{ 'active': url == '/' }">Portfolio</a>
+			</li>
+			<li [routerLink]="['/resume']">
+				<a [ngClass]="{ 'active': url == '/resume' }">Resume</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<div class="page">
+	<router-outlet></router-outlet>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="profile-photo"></div>
+				<p>My name is Brian O'Connor. Thanks for checking out my work. Let me know if you have any questions or suggestions or if you're looking for any technology help.</p>
+				<p>This website was built entirely with custom CSS and Angular. No additional libraries were added. Source code for this website can be found at: <a href="https://github.com/gtg489w/BrianPOConnor" target="_blank">https://github.com/gtg489w/BrianPOConnor</a></p>
+			</div>
+			<div class="col right">
+				<div>
+					<a href="https://www.linkedin.com/in/brian-o-connor-6b190711/" target="_blank">
+						<div class="social-icon social-icon-linkedin"></div>
+					</a>
+				</div>
+				<p>&copy; 2019 Brian O'Connor</p>
+			</div>
+		</div>
+	</div>
+</div>
+<boc-lightbox></boc-lightbox>

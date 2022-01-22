@@ -1,0 +1,10 @@
+<div class="container">
+	<h2>Project Showcase</h2>
+	<div class="project-list">
+		<div class="project" *ngFor="let project of projects" [routerLink]="['project', project.slug]">
+			<box-zoom [image]="project.image" [alt]="project.title" [caption]="'View Project'"></box-zoom>
+			<h3>{{ project.title }}</h3>
+			<div class="subtitle" [innerHtml]="project.subtitle"></div>
+		</div>
+	</div>
+</div>

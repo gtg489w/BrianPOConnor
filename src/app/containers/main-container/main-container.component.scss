@@ -1,0 +1,220 @@
+@import '~src/styles/main';
+
+.header {
+	background: $color-primary;
+	color: #ffffff;
+	padding: 12px 20px;
+	display: flex;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 100;
+
+	h1 {
+		margin: 0px;
+		display: inline-block;
+		max-height: 42px;
+		font-weight: 300;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		img  {
+			max-height: 42px;
+		}
+		span {
+			font-size: 26px;
+		}
+	}
+
+	.menu-button-container {
+		cursor: pointer;
+		float: right;
+		display: none;
+		margin-top: 5px;
+
+		.bar1, .bar2, .bar3 {
+			width: 35px;
+			height: 5px;
+			background-color: #ffffff;
+			margin: 6px 0;
+			transition: 0.4s;
+		}
+	}
+
+	nav {
+		display: inline-block;
+		margin-left: 20px;
+		line-height: 42px;
+		flex-grow: 1;
+		text-align: right;
+		text-transform: uppercase;
+
+		ul {
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+
+			li {
+				display: inline-block;
+				padding: 0px 12px;
+				cursor: pointer;
+
+				a {
+					color: #ffffff;
+					text-decoration: none;
+					position: relative;
+				}
+				a:after {
+					content: "";
+					width: 100%;
+					height: 2px;
+					background: #ffffff;
+					display: inline-block;
+					position: absolute;
+					left: 0px;
+					bottom: -10px;
+					transition: all .3s;
+					opacity: 0;
+				}
+				a.active:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+.page {
+	background: #ffffff;
+	margin-top: 40px;
+	padding-top: 26px;
+	padding-bottom: 40px;
+}
+.footer {
+	padding: 40px 0px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 300;
+
+	a {
+		color: #ffffff;
+	}
+	p {
+		margin: 8px 0px;
+	}
+	.profile-photo {
+		width: 80px;
+		height: 80px;
+		border: 2px solid #ffffff;
+		border-radius: 50%;
+		background: url(/assets/profile/profile.png) center center no-repeat;
+		background-size: cover;
+		float: left;
+		margin: 0px 12px 100px 0px;
+	}
+	.social-icon {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		background: #fff;
+		background: center center no-repeat;
+		background-size: contain;
+	}
+	.social-icon-linkedin {
+		background-image: url(/assets/icons/icon-social-linkedin-white.png);
+	}
+}
+
+// Responsive Navigation
+
+@media (max-width: 768px) {
+	.header {
+		display: block;
+		transition: all .3s;
+		height: 50px;
+		overflow: hidden;
+
+		.menu-button-container {
+			display: block;
+		}
+
+		nav {
+			display: block;
+			text-align: left;
+			margin-left: 0px;
+			padding-top: 40px;
+
+			ul li {
+				display: block;
+				font-size: 32px;
+				font-weight: 300;
+				margin: 20px 0px;
+
+				a {
+					padding: 0px;
+				}
+			}
+		}
+	}
+	.header.nav-open {
+		height: 100%;
+	}
+	.nav-open .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+	.nav-open .bar2 {
+		opacity: 0;
+	}
+	.nav-open .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+	.footer {
+		text-align: center;
+
+		.profile-photo {
+			float: none;
+			margin: auto;
+		}
+		p {
+			max-width: 340px;
+			margin: 32px auto;
+		}
+		.right {
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 468px) {
+	.header {
+		h1 {
+			width: 75%;
+			height: 50px;
+			display: flex;
+			align-items: center;
+
+			img {
+				width: 100%;
+			}
+		}
+		nav {
+			ul {
+				li {
+					a:after {
+						width: 0;
+						height: 0;
+						border-top: 10px solid transparent;
+						border-bottom: 10px solid transparent;
+						border-left: 9px solid #ffffff;
+						background: transparent;
+						position: absolute;
+						left: -15px;
+						bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}

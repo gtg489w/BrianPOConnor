@@ -1,0 +1,37 @@
+<div class="container">
+	<h2 [innerHtml]="project.title"></h2>
+	<div class="subtitle" [innerHtml]="project.subtitle"></div>
+	<div class="row">
+		<div class="col">
+			<div [innerHtml]="getContent()"></div>
+		</div>
+		<div class="col center">
+			<img *ngFor="let screen of project.images; let i = index" [src]="screen.url" [alt]="" [ngClass]="{ 'screens-right': i==0, 'screens-right-small': i>0, 'screens-right-inherit': screen.inheritSize, 'screens-right-cover': screen.cover }" [lightbox]="screen.url" />
+		</div>
+	</div>
+	<div class="row project-details">
+		<div class="col">
+			<div *ngIf="project.features.length > 0">
+				<h3>Features</h3>
+				<nested-list [list]="project.features"></nested-list>
+			</div>
+			<div *ngIf="project.features.length < 1 && project.results.length > 0">
+				<h3>Results</h3>
+				<nested-list [list]="project.results"></nested-list>
+			</div>
+		</div>
+		<div class="col">
+			<div *ngIf="project.features.length > 0 && project.results.length > 0">
+				<h3>Results</h3>
+				<nested-list [list]="project.results"></nested-list>
+			</div>
+
+			<div *ngIf="project.tags.length > 0">
+				<h3>Tags</h3>
+				<div class="tags">
+					<div class="tag" *ngFor="let tag of project.tags">{{ tag }}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

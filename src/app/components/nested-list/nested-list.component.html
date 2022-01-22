@@ -1,0 +1,6 @@
+<ul>
+	<li *ngFor="let item of list">
+		<div [innerHtml]="item.title"></div>
+		<nested-list *ngIf="item.children" [list]="item.children"></nested-list>
+	</li>
+</ul>

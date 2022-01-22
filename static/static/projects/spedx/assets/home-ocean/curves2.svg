@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1493px" height="1017px" viewBox="0 0 1493 1017" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>curves2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="curves2" transform="translate(746.500000, 508.500000) scale(-1, 1) translate(-746.500000, -508.500000) " fill-rule="nonzero">
+            <g id="Group" transform="translate(873.000000, 0.000000)" fill="#000000">
+                <path d="M619.061,674 C233.817,652.455 30.279,575.303 8.446,442.54 C-13.386,309.778 9.15,209.333 76.058,141.205 C104.972,112.09 175.873,83.218 288.767,54.589 C401.659,25.96 512.038,7.764 619.899,0 L619.061,674 Z" id="Rectangle-9"></path>
+            </g>
+            <g id="Group" transform="translate(0.000000, 473.000000)" fill="#011522">
+                <path d="M1492.898,543.268 L0,543.268 L0,0.635 C187.055,171.809 375.433,257.393 565.131,257.393 C849.682,257.393 941.354,215.108 1124.969,285.186 C1247.377,331.905 1370.021,417.93 1492.898,543.268 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
