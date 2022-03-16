@@ -22,7 +22,6 @@ export class DataService {
 	// Additional projects to add:
 	// 		PERP
 	// 		GateMate
-	//		Tailored Tee
 	//		eKO cooler
 	// 		Delta FSD, Nadex, GS/Clarity, FDIC, LED app, Luci
 
@@ -45,6 +44,22 @@ export class DataService {
 			alt: 'Website Screens',
 			inheritSize: true
 		}, {
+			url: '/assets/projects/biermi/delivery.png',
+			alt: 'Neshaminy Creek Delivery Van',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/presale.png',
+			alt: 'Presale',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/tank-planning.png',
+			alt: 'Tank Planning Screenshot',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/customer-review.png',
+			alt: 'Customer Review',
+			inheritSize: true
+		}, {
 			url: '/assets/projects/biermi/screen-search.png',
 			alt: 'Digital Menu',
 			inheritSize: true
@@ -64,6 +79,14 @@ export class DataService {
 			url: '/assets/projects/biermi/delivery-order-select.png',
 			alt: 'Digital Menu',
 			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/biermi-brian-label.jpeg',
+			alt: 'Digital Menu',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/biermi/biermi-brian-product-shot.jpg',
+			alt: 'Digital Menu',
+			inheritSize: true
 		}],
 		features: [
 			{
@@ -72,7 +95,7 @@ export class DataService {
 					{ title: 'Pick up, delivery, or shipping options' },
 					{ title: 'Product listings' },
 					{ title: 'Responsive design' },
-					{ title: 'Pick up Llocation selection' },
+					{ title: 'Pick up Location selection' },
 					{ title: 'Pre-sales' },
 					{ title: 'Promotion Codes' },
 					{ title: 'Integration with Square and Stripe' },
@@ -92,7 +115,7 @@ export class DataService {
 					{ title: 'Printing' },
 					{ title: 'User/role settings' },
 					{ title: 'Delivery creation / route planning' },
-					{ title: 'Route optimiztion' },
+					{ title: 'Route optimization' },
 					{ title: 'Automated email notifications to customers' },
 					{ title: 'Delivery driver location sharing' },
 					{ title: 'Reporting' }
@@ -107,6 +130,308 @@ export class DataService {
 			{ title: `Beer collaboration with True Respite Brewing Company` },
 		],
 		tags: ['Responsive', 'Google Analytics', 'AWS', 'DynamoDB', 'AWS RDS', 'Google Maps/Places', 'Square', 'Stripe', 'Clover', 'FreedomPay', 'Inventory Management', 'Serverless', 'AWS Lambda', 'AWS API Gateway']
+	}, {
+		image: '/assets/portfolio/cofisica.png',
+		slug: 'cofisica',
+		title: 'Cofisica',
+		subtitle: 'Owner & Creator',
+		content: `
+			<p>After a year of running competitive challenges of various formats through Peloton, I carved out some time on the weekend to build out a platform to allow us (and others) to create and run physical fitness challenges. Challenges sync data from Peloton and can be configured to incent high output, more miles, personal best scores, number of rides, etc. The platform is flexible enough to allow for rest days or for participants to work around their schedule by completing tasks within varying time windows.</p>
+			<p>Data is synchronized from Peloton to pull in near real-time statistics and display a leaderboard. Leaderboards are shareable so that bragging rights can be redeemed. Challenges can be configured as public where anyone can join the challenge or private to keep it between friends or colleagues.</p>
+		`,
+		images: [{
+			url: '/assets/projects/cofisica/homepage.png',
+			alt: 'Home Page',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/cofisica/leaderboard.png',
+			alt: 'Leaderboard',
+			inheritSize: true
+		}],
+		features: [
+			{ title: 'Shareable leaderboards' },
+			{ title: 'Fitness data synchronization' },
+			{ title: 'Customizable challenges' },
+			{ title: 'Various challenge tasks (e.g., output threshold, total output, miles threshold, total miles)' },
+			{ title: 'Challenge bonuses (e.g., personal best score)' },
+			{ title: 'Public/private challenges' },
+			{ title: 'Integration with Peloton' }
+		],
+		results: [
+			{ title: `<a target="_blank" href="https://cofisica.com/">https://cofisica.com/</a>` },
+		],
+		tags: ['Responsive', 'AWS', 'AWS RDS', 'AWS S3', 'AWS CloudFront', 'AWS Cloudwatch', 'AWS API Gateway', 'Serverless', 'AWS Lambda', 'Serverless Framework', 'Angular']
+	}, {
+		image: '/assets/portfolio/baby-brezza-formula-pro-advanced-wifi.png',
+		slug: 'baby-brezza-formula-pro-advanced-wifi',
+		title: 'Baby Brezza',
+		subtitle: 'Sales, Architect, & Lead',
+		content: `
+			<p>Baby Brezza is a product line that automatically makes a warm formula bottle instantly. The Formula Pro Advance Wi-Fi model allows the bottle to be made from a mobile phone.</p>
+			<p>Bresslergroup was engaged to help bring the Wi-Fi connectivity from a proof of concept to production. Baby Brezza had added an ESP32 controller to their device and built out the proof of concept using the IBM cloud. In less than a year, we supported the existing POC at CES, re-wrote the ESP32 firmware, redesigned the cloud infrastructure with a serverless architecture, moved to AWS, built and deploy an administrative web application, built a factory provisioning mobile app, and built a consumer facing mobile app to interact with their device.</p>
+			<h4>Firmware</h4>
+			<p>Firmware was written in C++ and built in a modular way for future project reuse. The firmware targeted an ESP32 and needed to communicate with another board. The firmware needed to coordinate factory provisioning which was accomplished by initially using Bluetooth to accept connections and the transmission of device certificates that are generated in AWS IoT Core. Once provisioned, the firmware would perform a self test that included verifying that communication with the main control board was working and connecting to the factory's Wi-Fi to report the status to the cloud.</p>
+			<p>Once provisioned in the factory, the firmware would allow provisioning to a customer's home Wi-Fi network and connect to the user's account. This would establish an open channel of communication with AWS IoT Core using MQTT.</p>
+			<h4>Cloud Infrastructure and Services</h4>
+			<p>Cloud infrastructure and the API services were all built using the Serverless Framework. We leveraged IoT Core, Lambda, API Gateway, RDS, DynamoDB, S3, CloudFront, Route53, and CloudWatch to be able to maintain a serverless architecture and use AWS managed services. The API was written in Node and deployed to Lambda for scaling.</p>
+			<p>Services were attached to IoT core events and exposed to the factory provisioning mobile app, consumer mobile app, and administration web application. Websockets were also exposed through API Gateway with sessions managed in DynamoDB and authN/authZ handled with a JWT that allows the consumer and administration web application to manage devices with live updates.</p>
+			<h4>Administration Web Application</h4>
+			<p>To manage the ecosystem, we built a web app that allows a Baby Brezza administrator to manage users, manage devices, manage metadata (e.g., formula settings), manage and release firmware updates, and report out on usage/active devices/bottles made.</p>
+			<h4>Consumer Mobile App</h4>
+			<p>To give the Baby Brezza a true IoT experience, we built a mobile app using React Native and released it to Google Play and Apple's App Store. The mobile app walks the customer through unboxing of the device, allows them to connect the device to their home network through an orchestration of Bluetooth and Wi-Fi connectivity, configure bottle presets, track formula usage, and quickly make bottles.</p>
+			<h4>Factory Provisioning Mobile App</h4>
+			<p>Before devices are shipped out directly to customers or to retailers, the devices need to be provisioned with unique certificates and tested at the factory. We built a hybrid mobile app using Ionic and provided the APK to the contract manufacturer. The app allows the CM to connect to devices, create the device metadata in the cloud, fetch the device certificates, transfer device certificates to the device for secure storage, and perform a self test to ensure the device has Wi-Fi connectivity and communication to the main board.</p>
+
+			<div class="center">
+				<iframe class="presentation" src="https://www.youtube.com/embed/q0Sv_pjMhNI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		`,
+		images: [{
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-scene.jpeg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-display.jpeg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-marketing-video.mp4',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-phone.jpeg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-product-shot.jpeg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-rendering-large-bottle.jpeg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-rendering.jpeg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/baby-brezza-formula-pro-advanced-wifi/baby-brezza-fpa-wifi-staged-counter.jpeg',
+			alt: '',
+			inheritSize: true
+		}],
+		features: [
+			{
+				title: 'Firmware',
+				children: [
+					{ title: 'C++ with custom common libraries for future reuse' },
+					{ title: 'Targeted to run on an ESP32' },
+					{ title: 'Provisioning, factory self tests, standard operating mode, and firmware updates' },
+					{ title: 'Certificate management' },
+					{ title: 'IoT connectivity to AWS IoT Core through MQTT' },
+				]
+			},
+			{
+				title: 'Cloud Infrastructure',
+				children: [
+					{ title: 'Serverless Framework leveraging IoT Core, Lambda, API Gateway, RDS, DynamoDB, S3, CloudFront, CloudWatch' },
+					{ title: 'Websockets through API Gateway with sessions managed in DynamoDB and JWT authN/authZ' },
+				]
+			},
+			{
+				title: 'Administration',
+				children: [
+					{ title: 'Angular SPA' },
+					{ title: 'User management, device management, metadata management (e.g., Formula Settings), reporting (e.g., usage, active devices), and firmware version management + firmware updates' },
+				]
+			},
+			{
+				title: 'Mobile App',
+				children: [
+					{ title: 'React Native mobile app for Android and iOS' },
+				]
+			},
+			{
+				title: 'Factory Provisioning Mobile App',
+				children: [
+					{ title: 'Hybrid Ionic app for the contract manufacturer' },
+					{ title: 'Provision device certificates' },
+					{ title: 'Bluetooth communication and data transmission' },
+				]
+			}
+		],
+		results: [
+			{ title: `More than 60k devices created in the first year` },
+			{ title: `More than 28k users registered in the first year` },
+			{ title: `More than 30k bottles configured in the first year` },
+			{ title: `More than 8.4 million bottles created in the first year` },
+		],
+		tags: [`Baby Brezza`, `IoT`, `Serverless`, `Factory Provisioning`, `Device Certificates`, `React Native`, `Ionic Hybrid App`, `Angular`, `Websockets`, `MQTT`, `RDS`]
+	}, {
+		image: '/assets/portfolio/usga-green-instrument.png',
+		slug: 'usga-green-instrument',
+		title: 'USGA - Green Instrument',
+		subtitle: 'Mobile Support',
+		content: `
+			<p>Bresslergroup was contracted to produce 10 prototype ball units to demonstrate the use of a single device packaged inside the form factor of a golf ball to measure firmness, speed, and trueness of greens. These prototypes were tested both in the lab and field to evaluate their potential.</p>
+			<p>Devices incorporated wireless charging, a gyroscope, a low-g accelerometer for higher precision, a high-g accelerometer to measure higher impact, and a bluetooth radio for test configuration and file transmission.</p>
+			<p>Alpha prototypes were built to test the concept and perform end to end tests including data transmission to the cloud for analysis. Beta revisions engaged our Mechanical Engineering team to develop a chassis for the PCB, balance all components to ensure smooth rolls, and engage with a contract manufacturer for production ramp-up.</p>
+			<p>A mobile app was built to allow agronomists to configure and perform tests with real-time feedback and to allow for data to be retrieved from the device and transmitted to the cloud.</p>
+			<div class="center">
+				<iframe class="presentation" src="https://www.youtube.com/embed/vcEbhrv3XLg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		`,
+		images: [{
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-case.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-boards-and-prototype-shell.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-alpha.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-chargers.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-charging.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-home.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-connecting.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-details.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/usga-green-instrument/usga-green-instrument-downloading.png',
+			alt: '',
+			inheritSize: true
+		}],
+		features: [
+			{ title: 'Bluetooth file transmission' },
+			{ title: 'Double-tap to wake the device' },
+			{ title: 'Low-g and high-g accelerometers' },
+			{ title: 'Gyroscope' },
+			{ title: 'Wireless charging' },
+		],
+		results: [],
+		tags: ['Ionic', 'Hybrid App', 'Bluetooth', 'Nordic']
+	}, {
+		image: '/assets/portfolio/split-flaps.png',
+		slug: 'split-flaps',
+		title: 'Split Flaps',
+		subtitle: 'Intelligence Injector',
+		content: `
+			<p>In 2019, Nick McGill, Ed Garcia, John Kurcheski, and I set off on an adventure to in inefficient nostalgia. We wanted to bring a new flare to an old mechanism - the split flap display.</p>
+			<div class="center">
+				<iframe class="presentation" src="https://www.youtube.com/embed/I4ov7oxJ4BM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<p>To get started, we used the open-source model to control the rotation of the flaps. Each character has forty flaps and is controlled by a stepper motor and a simple encoder, which is basically a magnet that goes around on a wheel. There's a hall-effect magnet sensor at a fixed position, and that indicates start and stop, or where home is. Unfortunately, the hardware costs add up, even when your time and 3D printing is considered free. We decided to limit our project to four split flaps, and even on that small scale, we still spent a couple hundred dollars on parts.</p>
+			<p>One of our first iterations ran perfectly, but it was silent. It didn't make the flip-flap sound that split flaps are known for, and we couldn't have a split flap without the flip flap. With some fiddling and testing, we determined that the interference between the flap and the casework top creates the soothing, uniform flapping sound.</p>
+			<p>We asked John Kurcheski, our resident model maker and all-around model citizen, if he'd help us create an enclosure for the split flap, and he jumped onboard immediately. We all collaborated on a sketch, and John got to work creating the box, laser-cutting some brackets, adding LED lighting, and making the final product look pretty. Fitting all the components inside casework wasn't easy, and John showed us why he's the king of cable management — one of the most boring sounding and yet critical pieces of the puzzle.</p>
+			<div class="center">
+				<iframe class="presentation" src="https://www.youtube.com/embed/uF2WdaeZqto" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+			<p>We designed and built a web application that is open to the public - anyone can access it. The application runs on AWS using a serverless architecture to reduce cost and leverages IoT Core to communicate with the split flaps.</p>
+			<p>To prevent anyone in the world from toying with the score, users need to authenticate themselves. When you open the web application, you will be prompted to press the green button on the split flap display proving that you are physically present with the device. You're then authenticated for the rest of the day and can control the scoreboard remotely from wherever you are. This made the display accessible and interactive without having to leave the ends during judging of our shuffle board games.</p>
+			<p>The other feature we added was the ability to go into clock mode - the split flap display would become somewhat useful while idle by turning into a clock.</p>
+		`,
+		images: [{
+			url: '/assets/projects/split-flaps/split-flaps-concept-sketch.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-boards.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-wiring.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-wiring2.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-software-development.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-architecture.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-web-app.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-light-bar.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-test.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-mounted.jpg',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/split-flaps/split-flaps-final.png',
+			alt: '',
+			inheritSize: true
+		},],
+		features: [
+			{ title: 'Authentication against the physical device' },
+			{ title: 'Debouncing in the web application and onboard the device' },
+			{ title: 'Live synchronization of score between the split flaps and web application' },
+			{ title: 'Clock mode' },
+		],
+		results: [
+			{ title: `<a target="_blank" href="https://www.bresslergroup.com/blog/our-diy-split-flap-an-adventure-in-inefficient-nostalgia/">https://www.bresslergroup.com/blog/our-diy-split-flap-an-adventure-in-inefficient-nostalgia/</a>` },
+		],
+		tags: ['AWS', 'IoT Core', 'MQTT', 'Websockets', 'Angular', 'AWS S3', 'AWS Lambda', 'AWS API Gateway']
+	}, {
+		image: '/assets/portfolio/milkcrate-studio.png',
+		slug: 'milkcrate-studio',
+		title: 'Milkcrate Studio',
+		subtitle: 'Creator',
+		content: `
+			<p>MilkCrate is a Philadelphia-based startup and an award-winning platform that you can use to create affordable and easy to launch mobile apps for your volunteers, students, community members, or human service clients.</p>
+			<p>After connecting with the CEO of MilkCrate and moving into an advisory role, we determined that a publicly facing interactive light-version of the MilkCrate app could accomplish two of the business's strategic goals: 1. quickly convey what MilkCrate is and the value prop, 2. collect leads and push them through their sales funnel.</p>
+			<p>The MilkCrate studio allowed potential customers to toggle on features and customize their future app with brand colors and logos. The Studio allowed potential customers to share their no-code customizations and would collect contact information along the way to generate leads.</p>
+		`,
+		images: [{
+			url: '/assets/projects/milkcrate-studio/milkcrate-studio-getting-started.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/milkcrate-studio/milkcrate-studio-profile.png',
+			alt: '',
+			inheritSize: true
+		}, {
+			url: '/assets/projects/milkcrate-studio/milkcrate-studio-activity.png',
+			alt: '',
+			inheritSize: true
+		}],
+		features: [
+			{ title: 'Logo and brand color customization' },
+			{ title: 'Share URL generation' },
+			{ title: 'Lead generation and collection of user data' },
+			{ title: 'Configuration/settings store to help seed MilkCrate mobile app' },
+		],
+		results: [],
+		tags: ['Responsive', 'Google Analytics', 'AWS', 'Angular', 'Lead Generation']
 	}, {
 		image: '/assets/portfolio/bresslergroup-design-defined.png',
 		slug: 'bresslergroup-design-defined',
@@ -592,7 +917,7 @@ export class DataService {
 		title: 'WIFFLE Ball Broadcast',
 		subtitle: 'Broadcast Producer',
 		content: `
-			<p>The annual Travis Roy Foundation WIFFLE® Ball Tournament at Little Fenway in Essex, Vermont, has raised over $4 Million to benefit spinal cord injured survivors and research into a cure for paralysis. This unique community event, where players from around the country can enjoy playing America’s #1 backyard game on replicas of Fenway Park, Wrigley Field, and Field of Dreams, has captured the attention of major media sources, sports enthusiasts, and friends of Travis Roy.</p>
+			<p>The annual Travis Roy Foundation WIFFLE® Ball Tournament at Little Fenway in Essex, Vermont, has raised over $4 Million to benefit spinal cord injured survivors and research into a cure for paralysis. This unique community event, where players from around the country can enjoy playing America's #1 backyard game on replicas of Fenway Park, Wrigley Field, and Field of Dreams, has captured the attention of major media sources, sports enthusiasts, and friends of Travis Roy.</p>
 			<h3>Involvement</h3>
 			<p>I have been volunteering at the annual WIFFLE ball tournament for many years in various capacities. Since 2014, I have been working with the Pack Network to produce the online stream of the games throughout the weekend. During the weekend of my first year, I identified a way to streamline the visual overlaid components (e.g., live scoreboard, batter identification and statistics) and built out a custom web application. This application allowed us to easily update the scoreboard and overlay that visual on the live feed.</p>
 			<p>The live broadcast is done in Wirecast with a layer dedicated to a green screen. The software I wrote (as seen in the previews on this page) enables the broadcasting team to set lineups, easily manage the scoreboard and current batter with a live keyboard feature, display scores of other games throughout the weekend, show a rotating graphic with our sponsors, and show pre-canned or custom infographics. These components are arranged on a green screen output and captured with wirecast.</p>

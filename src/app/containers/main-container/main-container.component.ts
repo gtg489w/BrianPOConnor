@@ -23,6 +23,7 @@ export class MainContainerComponent implements OnInit {
 			}
 			return true;
 		})).subscribe((route: any) => {
+			window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 			this.url = route.url;
 			this.navigationOpen = false;
 		});
